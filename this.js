@@ -8,7 +8,7 @@ const course = {
 // course.price
 const {instructor} = course
 // this is how we can de-structure an object.
-// console.log(instructor);
+console.log(instructor);
 
 // in a scope or object how can we log things?
 // using this keyword
@@ -24,24 +24,24 @@ const user = {
          
     }
 }
-// user.welcomeMessage()
-// user.username = "hifa"
-// user.welcomeMessage()
+user.welcomeMessage()
+user.username = "hifa"
+user.welcomeMessage()
 
 // here we define nothing so here this keyword returns an empty object{}
 // Example
-// console.log(this);
+console.log(this);
 
 // in browser the global object is window object: for interview.
 
 // this keyword will not work inside a function
 
-// function myfunc(){
-    // let username = "khizra"
-    // console.log(this); // this will print global and other values 
-    // console.log(this.username); // now it will results undefined and prints nothing.
-// }
-// myfunc()
+function myfunc(){
+    let username = "khizra"
+    console.log(this); // this will print global and other values 
+    console.log(this.username); // now it will results undefined and prints nothing.
+}
+myfunc()
 // 
 // 
 // 
